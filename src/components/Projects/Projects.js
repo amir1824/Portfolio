@@ -39,7 +39,7 @@ const Projects = () => {
               imgPath={portfolio}
               title="Portfolio"
               description="Portfolio for developer with react and bootstrap "
-              link="https://github.com/amir1824/Store-MERN-Stack-in-process-"
+              link="https://github.com/amir1824/Portfolio"
              
             />
           </Col>
