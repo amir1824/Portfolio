@@ -4,7 +4,7 @@ Portfoli for developer you can see the demo here: amir1824.tech
 
 ## The technologies
 - React
-- bootstrap
+- React bootstrap
 - css
 
 ## How to run 
