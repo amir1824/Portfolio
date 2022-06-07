@@ -7,7 +7,7 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import './Fotter.css'
 
-function Footer() {
+const Footer =()=> {
   let date = new Date();
   let year = date.getFullYear();
   return (
