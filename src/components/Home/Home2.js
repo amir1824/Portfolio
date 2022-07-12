@@ -23,9 +23,9 @@ function Home2() {
               LET ME <span className="blue"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              dance
+          
               <br />
-              <br /> my skils
+              <br /> my skills
               <i>
                 <b className="blue"> Java, Javascript and Python. </b>
               </i>
