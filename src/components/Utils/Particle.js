@@ -36,7 +36,7 @@ import { loadFull } from "tsparticles";
           },
           modes: {
             push: {
-              quantity: 4,
+              quantity: 2,
             },
             repulse: {
               distance: 200,
@@ -65,7 +65,7 @@ import { loadFull } from "tsparticles";
               default: "bounce",
             },
             random: true,
-            speed: 4,
+            speed: 1,
             straight: false,
           },
           number: {

@@ -8,7 +8,6 @@ import {
 
 
 
-import { AnimatePresence } from "framer-motion";
 import Preloader from "../src/components/Utils/pre";
 import Navbar from "./components/Utils/Navbar";
 import Home from "./pages/Home/Home";
@@ -46,7 +45,7 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
-        <AnimatePresence exitBeforeEnter>
+        
         <Routes key={location.pathname} location={location} >
           <Route path="/" element={<Home />} />
           <Route path='/project' element={< Projects />} />
@@ -57,7 +56,7 @@ function App() {
           
         </Routes>
         
-        </AnimatePresence>
+        
         <Footer />
       </div>
       </section>
