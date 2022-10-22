@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "../Projects/ProjectCards";
-import Particle from "../Utils/Particle";
+import Particle from "../../components/Utils/Particle";
 import freelance1 from '../../Assets/freelance1.jpeg'
 import './Freelance.css'
-import AnimationPage from "../Utils/AnimationPage";
+import AnimationPage from "../../components/Utils/AnimationPage";
 const FreelanceProjects = () => {
 
   return (

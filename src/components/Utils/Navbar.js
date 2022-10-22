@@ -14,6 +14,7 @@ import {
   
 } from "react-icons/ai";
 import {BiDollar} from 'react-icons/bi'
+import logo from '../../Assets/logo-no-background.png'
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -39,8 +40,9 @@ const NavBar =()=> {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-         
+
+        <Navbar.Brand href="/" className="d-flex"> 
+        <img src={logo} className="img-fluid logo" alt="brand"/>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

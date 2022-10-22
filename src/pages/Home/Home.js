@@ -1,11 +1,11 @@
 import {React} from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Utils/Particle";
+import Particle from "../../components/Utils/Particle";
 import Home2 from "./Home2";
 import Type from "./TypeWriter";
-import LottieHome from "../Lottie/LottieHome";
+import LottieHome from "../../components/Lottie/LottieHome";
 import './Home.css'
-import AnimationPage from "../Utils/AnimationPage";
+import AnimationPage from "../../components/Utils/AnimationPage";
 
 
 const Home = () => {

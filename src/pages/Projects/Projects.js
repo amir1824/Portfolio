@@ -1,14 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Utils/Particle";
+import Particle from "../../components/Utils/Particle";
 import ChatApp from '../../Assets/ChatApp.png'
 import recipesapp from '../../Assets/veganrecipes.png'
 import Store from '../../Assets/Store.png'
 import MapWorkout from '../../Assets/mapWorkout.jpeg'
 import portfolio from '../../Assets/portfolio.jpeg'
 import './Projects.css'
-import AnimationPage from "../Utils/AnimationPage";
+import AnimationPage from "../../components/Utils/AnimationPage";
 
 const Projects = () => {
 

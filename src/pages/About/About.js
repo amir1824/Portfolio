@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import './About.css'
-import Particle from "../Utils/Particle";
+import Particle from "../../components/Utils/Particle";
 import Techstack from './Techstak'
 import Toolstack from "./ToolStack";
 import AboutCard from "./AboutCard";
-import Lottie from "../Lottie/LottieAbout";
-import AnimationPage from "../Utils/AnimationPage";
+import Lottie from "../../components/Lottie/LottieAbout";
+import AnimationPage from "../../components/Utils/AnimationPage";
 
 const  About = ()=> {
     return (
