@@ -5,29 +5,24 @@ import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiOutlineFacebook,
-  
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-
 function Home2() {
   return (
-   
+
     <Container fluid className="home-about-section" id="about">
-   
       <Container >
-      
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="blue"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-          
               <br />
-              <br /> my skills
+              <br /> My skills
               <i>
-                <b className="blue"> Java, Javascript and Python. </b>
+                <b className="blue"> JavaScript and Java. </b>
               </i>
               <br />
               <br />
@@ -98,12 +93,12 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              
             </ul>
           </Col>
         </Row>
       </Container>
     </Container>
   );
-}
+};
+
 export default Home2;

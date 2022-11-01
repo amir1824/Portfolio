@@ -1,31 +1,28 @@
-import {React, useEffect} from "react"
-import lottie from "lottie-web"
+import {useEffect,useRef} from "react";
+import lottie from "lottie-web";
 
 const LottieAbout =()=>{
+
+    const container = useRef(null)
  
  
     useEffect(()=>{
         const instance = lottie.loadAnimation({
-            container: document.getElementById('lottie'),
+            container:container.current,
             renderer:'svg',
             loop:true,
             autoplay:true,
             animationData: require('./developer.json')
-        })
+        });
 
-        return() =>instance.destroy()
-    },[])
+        return() =>instance.destroy();
+    },[]);
  
-
-    return(
-        
+    return(   
         <div>
-             <div id='lottie'></div>
-        </div>
-  
-       
-    )
+             <div id='container' ref={container}></div>
+        </div> 
+    );
+};
 
-
-}
-export default LottieAbout
+export default LottieAbout;

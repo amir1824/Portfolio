@@ -1,8 +1,8 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import './About.css'
+import './AboutCompnents.css';
 import {
-  
+
   SiVisualstudiocode,
   SiPostman,
   SiMacos,
@@ -10,43 +10,53 @@ import {
   SiJirasoftware,
   SiXcode,
   SiAndroidstudio,
-  SiLinux
+  SiLinux,
+  SiWindows
 } from "react-icons/si";
 import { DiGit } from "react-icons/di";
 
-const Toolstack =() => {
+const Toolstack = () => {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiJirasoftware />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiInsomnia />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiXcode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAndroidstudio />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiLinux />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      
-    </Row>
+    <>
+      <h1 className="project-heading">
+        <strong className="blue">Tools</strong>
+      </h1>
+
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiJirasoftware />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiVisualstudiocode />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiPostman />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiInsomnia />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiMacos />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiXcode />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiAndroidstudio />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiLinux />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <DiGit />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+        <SiWindows/>
+        </Col>
+      </Row>
+
+    </>
   );
-}
+};
 
 export default Toolstack;
