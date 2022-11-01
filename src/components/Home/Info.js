@@ -20,9 +20,9 @@ function Home2() {
             </h1>
             <p className="home-about-body">
               <br />
-              <br /> my Skills
+              <br /> My skills
               <i>
-                <b className="blue"> Java, Javascript and Python. </b>
+                <b className="blue"> JavaScript and Java. </b>
               </i>
               <br />
               <br />

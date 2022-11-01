@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import './About.css';
+import './AboutCompnents.css';
 import {
 
   SiVisualstudiocode,
@@ -10,7 +10,8 @@ import {
   SiJirasoftware,
   SiXcode,
   SiAndroidstudio,
-  SiLinux
+  SiLinux,
+  SiWindows
 } from "react-icons/si";
 import { DiGit } from "react-icons/di";
 
@@ -48,6 +49,9 @@ const Toolstack = () => {
         </Col>
         <Col xs={4} md={2} className="tech-icons">
           <DiGit />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+        <SiWindows/>
         </Col>
       </Row>
 

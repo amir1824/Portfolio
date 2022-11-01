@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import './About.css'
+import './AboutCompnents.css'
 import {
   DiJavascript1,
   DiReact,
@@ -9,10 +9,8 @@ import {
   DiPython,
   DiMysql,
   DiJava,
-
-
 } from "react-icons/di";
-import { SiFirebase, SiTypescript } from "react-icons/si";
+import { SiFirebase, SiTypescript,SiVuedotjs } from "react-icons/si";
 
 
 
@@ -51,6 +49,9 @@ const Techstack = () => {
         </Col>
         <Col xs={4} md={2} className="tech-icons">
           <DiJava />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiVuedotjs />
         </Col>
       </Row>
     </>
