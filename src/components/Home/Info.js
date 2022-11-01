@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.jpeg";
-import Tilt from "react-parallax-tilt";
+import LottieProfile from "../Lottie/LottieProfile";
 import {
   AiFillGithub,
   AiOutlineFacebook,
@@ -51,9 +50,7 @@ function Home2() {
             </p>
           </Col>
           <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
+              <LottieProfile/>
           </Col>
         </Row>
         <Row>
