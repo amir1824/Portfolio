@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "../Projects/ProjectCards";
-import Particle from "../../components/Utils/Particle";
+import ProjectCard from "../../components/Projects/ProjectCards";
 import freelance1 from '../../Assets/freelance1.jpeg'
 import getWalk from '../../Assets/getWalk.jpeg'
 import './Freelance.css'
@@ -11,7 +10,6 @@ const FreelanceProjects = () => {
   return (
     <AnimationPage>
       <Container fluid className="freelance-section">
-        <Particle />
         <Container>
           <h1 className="freelnace-heading">
             My Recent <strong className="blue">Freelance Works </strong>

@@ -1,19 +1,18 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import './About.css'
-import Particle from "../../components/Utils/Particle";
-import Techstack from './Techstak'
-import Toolstack from "./ToolStack";
-import AboutCard from "./AboutCard";
+import Techstack from '../../components/About/Techstak'
+import Toolstack from "../../components/About/ToolStack";
+import AboutCard from "../../components/About/AboutCard";
 import Lottie from "../../components/Lottie/LottieAbout";
 import AnimationPage from "../../components/Utils/AnimationPage";
 
-const  About = ()=> {
-    return (
-      <AnimationPage>
+const About = () => {
+  return (
+    <AnimationPage>
       <Container fluid className="about-section">
-        <Particle />
         <Container>
+
           <Row style={{ justifyContent: "center", padding: "10px" }}>
             <Col
               md={7}
@@ -26,40 +25,25 @@ const  About = ()=> {
               <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
                 Know Who <strong className="blue">I'M</strong>
               </h1>
-              <AboutCard/>
+              <AboutCard />
             </Col>
 
             <Col
-                 md={5}
-                 style={{ paddingTop: "5px", paddingBottom: "20px" }} 
+              md={5}
+              style={{ paddingTop: "5px", paddingBottom: "20px" }}
             >
-           
-           <Lottie/>
-            
+              <Lottie />
             </Col>
-            
-               
           </Row>
-          <h1 className="project-heading">
-             <strong className="blue">Skills </strong>
-          </h1>
-          <Techstack/>
-  
-       
-  
-          <h1 className="project-heading">
-            <strong className="blue">Tools</strong>
-          </h1>
-          <Toolstack/>
-         
-  
-          
+
+          <Techstack />
+          <Toolstack />
+
         </Container>
-    
       </Container>
-      </AnimationPage>
-      
-    );
-  }
-  
-  export default About;
+    </AnimationPage>
+
+  );
+};
+
+export default About;

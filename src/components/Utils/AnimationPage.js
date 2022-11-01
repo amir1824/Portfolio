@@ -6,7 +6,6 @@ const animations ={
     exit:{opacity:0,x:-100}
 }
 const AnimationPage =({children})=>{
-
     return(
         <motion.div 
         variants={animations} 
@@ -14,12 +13,10 @@ const AnimationPage =({children})=>{
         animate='animate'
         exit='exit'
         transition={{duration:1}}
-        >
-
-         {children}
+        >Ï
+        {children}
         </motion.div>
-    )
+    );
+};
 
-}
-
-export default AnimationPage
+export default AnimationPage;

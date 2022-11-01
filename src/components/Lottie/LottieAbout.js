@@ -11,21 +11,16 @@ const LottieAbout =()=>{
             loop:true,
             autoplay:true,
             animationData: require('./developer.json')
-        })
+        });
 
-        return() =>instance.destroy()
-    },[])
+        return() =>instance.destroy();
+    },[]);
  
-
-    return(
-        
+    return(   
         <div>
              <div id='lottie'></div>
-        </div>
-  
-       
-    )
+        </div> 
+    );
+};
 
-
-}
 export default LottieAbout

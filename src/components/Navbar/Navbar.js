@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
-import './Navbar.css'
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
@@ -11,14 +10,13 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
-  
 } from "react-icons/ai";
-import {BiDollar} from 'react-icons/bi'
+import { BiDollar } from 'react-icons/bi'
 import logo from '../../Assets/logo-no-background.png'
-
+import './Navbar.css';
 import { CgFileDocument } from "react-icons/cg";
 
-const NavBar =()=> {
+const NavBar = () => {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -29,7 +27,6 @@ const NavBar =()=> {
       updateNavbar(false);
     }
   }
-
   window.addEventListener("scroll", scrollHandler);
 
   return (
@@ -40,9 +37,8 @@ const NavBar =()=> {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-
-        <Navbar.Brand href="/" className="d-flex"> 
-        <img src={logo} className="img-fluid logo" alt="brand"/>
+        <Navbar.Brand href="/" className="d-flex">
+          <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -71,7 +67,6 @@ const NavBar =()=> {
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -84,8 +79,6 @@ const NavBar =()=> {
                 Projects
               </Nav.Link>
             </Nav.Item>
-
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -95,7 +88,6 @@ const NavBar =()=> {
                 <BiDollar style={{ marginBottom: "2px" }} /> Freelance Projects
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -105,10 +97,6 @@ const NavBar =()=> {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-
-          
-
-
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/amir1824"
@@ -124,6 +112,6 @@ const NavBar =()=> {
       </Container>
     </Navbar>
   );
-}
+};
 
 export default NavBar;
